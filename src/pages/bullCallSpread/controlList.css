@@ -1,0 +1,187 @@
+.add--control__wrapper .add--control__general__info {
+    height: 405px;
+    width: 280px;
+    border: 1px solid #eaeaf2;
+    border-radius: 0px;
+    background: #fff;
+    padding: 15px 20px 20px 20px;
+}
+.add--control__wrapper .add--control__general__info .motif-label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+   /* identical to box height */
+    color: #747480;
+}
+.add--control__wrapper .add--control__general__info .motif-select-trigger {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    background: #f6f6fa;
+    color: #2e2e38;
+}
+.add--control__wrapper .add--control__general__info .motif-form-field-select-input {
+    margin-bottom: 25px;
+}
+.add--control__wrapper .add--control__general__info .general__info--buttons {
+    margin-bottom: 35px;
+}
+.add--control__wrapper .add--control__general__info .general__info--buttons .general__info--button-primary {
+    background-color: black;
+    border: 1px solid #2e2e38;
+    box-shadow: none;
+    border-radius: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    height: 44px;
+    margin-left: 0px;
+    margin-right: 25px;
+    margin-top: 10px;
+    padding: 0 30px;
+}
+.add--control__wrapper .add--control__general__info .general__info--buttons .Mui-disabled {
+    background-color: rgba(0, 0, 0, 0.12) !important;
+    border: 1px solid rgba(0, 0, 0, 0.12) !important;
+}
+.add--control__wrapper .add--control__general__info .general__info--buttons .general__info--button-default {
+    background-color: white;
+    border: 1px solid black;
+    box-shadow: none;
+    border-radius: 0;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    height: 44px;
+    margin-top: 10px;
+    padding: 0 30px;
+}
+.add--control__wrapper .add--control__select-wrapper {
+    margin: 12px 0;
+}
+.add--control__wrapper .add--control__select-wrapper .MuiInputLabel-filled {
+    font-size: 12px;
+}
+.veriable--table {
+    box-shadow: none;
+}
+.veriable--table table, .veriable--table tr {
+    border-bottom: 1px solid #e7e7ea;
+}
+.veriable--table .table--header {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2e2e38;
+    width: 33.33%;
+    border-bottom: none;
+}
+.veriable--table .table--body_text {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: #2e2e38;
+    border-bottom: none;
+    width: 300px;
+    word-wrap: break-word;
+}
+.veriable--table .table--heading__name {
+    flex-basis: 20%;
+}
+.veriable--table .table--heading__description {
+    flex-basis: 20%;
+}
+.veriable--table .table--heading__description .description__block {
+    text-align: center;
+}
+.veriable--table .table--heading__csp {
+    flex-basis: 20%;
+    text-align-last: center;
+}
+.veriable--table .table--heading__certificate {
+    flex-basis: 20%;
+}
+.veriable--table .table--header__name {
+    margin-left: unset;
+}
+.veriable--table .table--header__insidetext {
+    margin: 0 auto;
+    display: table;
+    width: 75px;
+    text-align: left;
+}
+.veriable--table .collector__Name--icon {
+    margin-left: 10px;
+    margin-bottom: -5px;
+}
+.veriable--table .collector--table__img {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 35px;
+}
+.veriable--table--heade--block {
+    position: relative;
+}
+.veriable--table--heade--block .table--sort--icon_up1 {
+    position: absolute;
+    left: 55px;
+    top: -5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.veriable--table--heade--block .table--sort--icon_down1 {
+    position: absolute;
+    left: 55px;
+    top: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.veriable--table--heade--block .table--sort--icon_up {
+    position: absolute;
+    left: 95px;
+    top: -5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.veriable--table--heade--block .table--sort--icon_down {
+    position: absolute;
+    left: 95px;
+    top: 5px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+.veriable--table--heade--block .table--sort--icon_up.table--sort--icon_up__csp {
+    left: 100px;
+}
+.veriable--table--heade--block .table--sort--icon_down.table--sort--icon_down__csp {
+    left: 100px;
+}
+.veriable--table--heade--block .active {
+    opacity: 1;
+}
+.control-ownerBox .control-owner {
+    margin-left: 24px;
+}
+.control--list__table--row-body .azure-chinablock {
+    height: 40px;
+    width: 30px;
+    margin-top: 10px;
+}
+.control--list__table--row-body .azure-chinablock img.azure-china {
+    width: 30px;
+    height: 30px;
+}
