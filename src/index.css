@@ -3,6 +3,7 @@
   src:
     url('./fonts/Nunito-VariableFont_wght.ttf') format('truetype');
 }
+
 @font-face {
   font-family: 'NunitoItalic';
   src:
@@ -12,12 +13,13 @@
 
 body {
   margin: 0;
-  font-family: 'Nunito !important';
-  background-image: url('./img/background.jpg');
+  font-family: 'Nunito';
+  /* background-image: url('./img/background.jpg'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;}
+  background-size: cover;
+}
 
 code {
-  font-family: 'Nunito !important';
+  font-family: 'Nunito';
 }

@@ -31,7 +31,6 @@ const useStyles = makeStyles({
   },
   searchText: {
     height: 40,
-    width: 229,
     border: '1px solid #C4C4CD',
     paddingLeft: 20,
     paddingRight: 30,
@@ -96,6 +95,9 @@ const useStyles = makeStyles({
     color: 'grey',
     width: '248px',
     padding: '5px',
+    '& .MuiTypography-root': {
+      fontSize: '14px'
+    }
   },
   paper: {
     margin: '0px 10px',
@@ -117,7 +119,11 @@ const useStyles = makeStyles({
     cursor: 'pointer',
     height: '15px',
     alignSelf: 'center'
-  }
+  },
+  tableHead:{ border: '1px solid #E7E7EA', maxHeight: '49vh', overflowY: 'auto',
+'& .veriable--table':{
+  borderRadius:'unset !important'
+}}
 });
 
 const ControlList = () => {
@@ -185,10 +191,10 @@ const ControlList = () => {
 
   const chooseAllFilters = () => {
     const filterObj = {
-      'Expiry': [...new Set(ControlListData.data.map((item) => item.expiry))],
-      'Ls_Iv': [...new Set(ControlListData.data.map((item) => item.resourceType).flat())],
-      'Ls_Payoff': [...new Set(ControlListData.data.map((item) => item.certificationStandard).flat())],
-      'PP': [...new Set(ControlListData.data.map((item) => item.cloudProvider).flat())],
+      'Expiry': [...new Set(ControlListData.map((item) => item.expiry))],
+      'Ls_Iv': [...new Set(ControlListData.map((item) => item.ls_iv))],
+      'Ls_Payoff': [...new Set(ControlListData.map((item) => item.ls_payoff))],
+      'PP': [...new Set(ControlListData.map((item) => item.pp))],
     }
     setFilterData(filterObj)
   }
@@ -197,7 +203,7 @@ const ControlList = () => {
   useEffect(() => {
     if (ControlListData && ControlListData !== undefined) {
       setData(ControlListData);
-      if (ControlListData.data && ControlListData.data.length > 0) {
+      if (ControlListData && ControlListData.length > 0) {
         chooseAllFilters()
       }
     }
@@ -267,8 +273,8 @@ const ControlList = () => {
             .indexOf(textToSearch.toLowerCase()) !== -1
         ).length > 0 ?
           <>
-            <div style={{ border: '1px solid #E7E7EA', borderBottom: 'none' }}>
-              <TableHeader />
+            <div className={classes.tableHead}>
+              <TableHeader/>
               {
                 data.filter((item) =>
                   item.expiry.toString()

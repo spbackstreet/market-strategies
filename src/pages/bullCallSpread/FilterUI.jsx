@@ -10,7 +10,7 @@ import { makeStyles } from '@mui/styles';
 
 const useStyles = makeStyles(() => ({
     paper1: {
-        width: '230px',
+        width: '220px',
         paddingLeft: '4px',
         '& .MuiTypography-body1': {
             fontSize: '14px !important',
@@ -22,10 +22,10 @@ const useStyles = makeStyles(() => ({
     },
     collapseIcon: {
         color: '#2E2E38',
-        marginLeft: '10px',
     },
     paper2: {
-        width: '100%',
+        width: '88%',
+        marginLeft: '1px !important',
         padding: '5px 5px 5px 20px',
         backgroundColor: '#FAFAFC',
         '& .MuiTypography-body1': {
@@ -34,7 +34,8 @@ const useStyles = makeStyles(() => ({
     },
     searchText: {
         height: 35,
-        width: 229,
+        width: 170,
+        borderRadius:'10px',
         border: 'none',
         borderBottom: '1px solid #C4C4CD',
         paddingLeft: 20,
@@ -111,7 +112,7 @@ const FilterUI = (props) => {
                     {/* <MotifIcon className={classes.searchIcon} src={actionIcSearch24px} /> */}
                 </Box>
                 {provider.filter((item) =>
-                    item
+                    item.toString()
                         .toLowerCase()
                         .indexOf(filterSearch.toLowerCase()) !== -1).map((val) =>
                             <FormControlLabel
@@ -121,7 +122,7 @@ const FilterUI = (props) => {
                                     checked={selectedFilterTemp[type].includes(val)}
                                     onChange={() => updateChecksFilter(val)}
                                     name={val} />}
-                                label={val.charAt(0).toUpperCase() + val.slice(1)}
+                                label={val}
                             />
                         )}
             </Collapse>

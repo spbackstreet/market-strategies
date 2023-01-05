@@ -2,6 +2,10 @@
   text-align: -webkit-center;
   height: 100vh;
   display: grid;
+  background-image: url('../../img/background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .App-logo {
@@ -43,7 +47,8 @@
   justify-content: center;
   z-index: 9;
 }
-.loginInputs{
+
+.loginInputs {
   width: 30%;
   height: 30px;
   font-size: 15px;
@@ -52,10 +57,12 @@
   text-align: center;
   padding: 5px;
 }
-.mb20{
+
+.mb20 {
   margin-bottom: 20px;
 }
-.loginButton{
+
+.loginButton {
   background: rgba(255, 255, 255, 0.338);
   color: white;
   margin-top: 20px;
@@ -63,6 +70,7 @@
   width: 70px !important;
   border-radius: 10px;
 }
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

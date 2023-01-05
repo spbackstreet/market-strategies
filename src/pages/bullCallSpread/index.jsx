@@ -19,10 +19,10 @@ const styles = makeStyles({
         paddingTop: '10px',
         paddingBottom: '10px',
         height: '45px',
-        background: 'aliceblue !important',
+        // background: 'aliceblue !important',
     },
     etmName: {
-        color: 'darkcyan',
+        color: '#2E2E38',
         fontFamily: 'Nunito',
         fontSize: '22px',
         fontWeight: 700,

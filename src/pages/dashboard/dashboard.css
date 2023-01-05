@@ -1,8 +1,10 @@
-.back {
-    background: aliceblue;
+.table {
     padding-top: 1px;
-    height: 66vh;
-    width: 50%
+    height: 67vh;
+    width: 60%
+}
+.chart {
+    padding-top: 1px;
 }
 
 .m20 {
