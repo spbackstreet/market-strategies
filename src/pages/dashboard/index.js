@@ -5,12 +5,12 @@ import './dashboard.css'
 const Dashboard = (props) => {
     const { fullName } = props
     return (
-        <Box>
+        <Box className='m20'>
             <h1 style={{ color: 'white' }}>
                 Welcome, {fullName}
             </h1>
             <Box className='back' >
-            <ControlList />
+                <ControlList />
             </Box>
         </Box>
     )

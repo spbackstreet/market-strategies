@@ -1,16 +1,14 @@
 
-import { Box, Button, ClickAwayListener, Checkbox, Tooltip, FormControlLabel, Popper } from '@mui/material';
-import React, { useEffect } from 'react';
 import SortIcon from '@mui/icons-material/Sort';
+import { Box, Button, Checkbox, ClickAwayListener, FormControlLabel, Popper, Tooltip } from '@mui/material';
+import { makeStyles } from '@mui/styles';
+import React, { useEffect } from 'react';
 import './controlList.css';
+import ControlListData from './ControlListData';
 import CustomPagination from './CustomPagination';
+import FilterUI from './FilterUI';
 import TableHeader from './TableHeader';
 import TableRows from './TableRows';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { fetchControlList } from '../../store/controlList/controlList-actions';
-import FilterUI from './FilterUI';
-import ControlListData from './ControlListData';
-import { makeStyles } from '@mui/styles';
 
 
 const useStyles = makeStyles({
@@ -54,7 +52,7 @@ const useStyles = makeStyles({
   searchBox: { display: 'flex', justifyContent: 'end', margin: '-65px 0px 25px 0px' },
 
   noResult: {
-    fontFamily: 'EYInterstate',
+    fontFamily: 'Nunito',
     fontStyle: 'normal',
     fontWeight: 500,
     fontSize: '12px !important',
@@ -67,7 +65,7 @@ const useStyles = makeStyles({
   sortValue: {
     minWidth: 87,
     justifyContent: 'space-around',
-    fontFamily: 'EYInterstate',
+    fontFamily: 'Nunito',
     lineHeight: '11px',
     color: '#747480',
     marginLeft: 5,
@@ -95,7 +93,7 @@ const useStyles = makeStyles({
     marginLeft: 10,
   },
   allCloud: {
-    color: '#000000',
+    color: 'grey',
     width: '248px',
     padding: '5px',
   },
@@ -104,7 +102,7 @@ const useStyles = makeStyles({
     border: '1px solid #C4C4CD',
     color: '#000000',
   },
-  filterBox: { maxHeight: '65vh', paddingBottom: '20px', overflowY: 'auto', border: '1px solid #C4C4CD', backgroundColor: '#FFFFFF', width: '305px' },
+  filterBox: { maxHeight: '65vh', paddingBottom: '20px', overflowY: 'auto', border: '1px solid #C4C4CD', backgroundColor: '#FFFFFF', width: '305px', marginLeft: '-41%', marginTop: '10px' },
   certification: {
     border: '1px solid #2E2E38',
     width: 'fit-content',
@@ -123,10 +121,6 @@ const useStyles = makeStyles({
 });
 
 const ControlList = () => {
-  // const isApiLoading = useSelector((state) => state.controlListReducer.isApiLoading);
-  // const apierror = useSelector((state) => state.controlListReducer.apiError);
-  // const ControlListData = useSelector((state) => state.controlListReducer.ControlListData);
-  // const dispatch = useDispatch();
   const classes = useStyles();
   const [search, setSearch] = React.useState('');
   const [textToSearch, setTextToSearch] = React.useState('');
@@ -454,7 +448,7 @@ const ControlList = () => {
           {isFilterApplied && [...new Set(Object.keys(selectedFilterTemp).map((item) => selectedFilterTemp[item]).flat())].length > 0 && <Box className={classes.filterCount}>{[...new Set(Object.keys(selectedFilterTemp).map((item) => selectedFilterTemp[item]).flat())].length}</Box>}
           <SortIcon className={classes.sortIcon} onClick={(e) => handleClick(e)} />
         </Box>
-        <Popper style={{ marginTop: '10px', left: '-48px' }} id={id} open={open} anchorEl={anchorEl}>
+        <Popper style={{ marginTop: '20px', left: '-48px' }} id={id} open={open} anchorEl={anchorEl}>
           <ClickAwayListener onClickAway={(e) => handleClick(e)}>
             <Box>
               <Box className={classes.filterBox}>
@@ -476,7 +470,7 @@ const ControlList = () => {
                 }
               </Box>
               <div className='add--control__wrapper'>
-                <div className='add--control__general__info' style={{ height: '65px', padding: '0 0 0 40px', width: 'auto', border: '1px solid #C4C4CD', }}>
+                <div className='add--control__general__info' style={{ height: '65px', width: '265px', padding: '0 0 0 40px', border: '1px solid #C4C4CD', }}>
                   <div className='general__info--buttons'>
                     <Button
                       className='general__info--button-primary'

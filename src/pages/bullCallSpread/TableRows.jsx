@@ -38,7 +38,7 @@ const useStyles = makeStyles({
     '& .MuiTypography-root': {
       fontSize: '14px',
       color: 'grey',
-      fontFamily: 'Montserrat',
+      fontFamily: 'Nunito',
     },
     '& .MuiListItem-button': {
       paddingTop: '5px',
@@ -107,7 +107,7 @@ const useStyles = makeStyles({
   tooltip: {
     height: 'auto',
     fontSize: '12px ',
-    fontFamily: 'EyInterstate',
+    fontFamily: 'Nunito',
     color: 'white',
     backgroundColor: '#2E2E38',
     zIndex: 1
@@ -125,27 +125,27 @@ const TableRows = (props) => {
   return (
     <div id={'_controlList_' + itemIndex} className={`${classes.tablefont} executiveuserlist`}>
       <div className={classes.rowBlock + ' control--list__table--row-body'}>
-        <div style={{ flexBasis: '32%', padding: '8px' }}>
+        <div style={{ flexBasis: '32%'}}>
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <div className={classes.emaildate}>{rowItem.expiry}</div>
           </div>
         </div>
-        <div style={{ flexBasis: '20%', padding: '8px' }}>
+        <div style={{ flexBasis: '20%'}}>
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <div className={classes.emaildate}>{rowItem.ls_iv}</div>
           </div>
         </div>
-        <div style={{ flexBasis: '23%', padding: '8px' }}>
+        <div style={{ flexBasis: '23%'}}>
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <div className={classes.emaildate}>{rowItem.pp}</div>
           </div>
         </div>
-        <div style={{ flexBasis: '24%', padding: '8px' }}>
+        <div style={{ flexBasis: '24%'}}>
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <div className={classes.emaildate}>{rowItem.ls_payoff}</div>
           </div>
         </div>
-        <div style={{ flexBasis: '13%', padding: '8px' }}>
+        <div style={{ flexBasis: '13%'}}>
           <div style={{ display: 'flex', alignItems: 'center' }}>
             <div className={classes.emaildate}>{rowItem.hs_iv}</div>
           </div>

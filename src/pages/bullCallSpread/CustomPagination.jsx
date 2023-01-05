@@ -21,28 +21,28 @@ const useStyles = makeStyles({
             background: 'transparent',
             marginRight: '10px',
             fontSize: '14px',
-            fontFamily: 'Montserrat',
+            fontFamily: 'Nunito',
         },
         '& .MuiPaginationItem-textPrimary.Mui-selected:hover': {
             color: 'grey',
             background: 'transparent',
         },
     },
-    paginationBarEYInterstate: {
+    paginationBarNunito: {
         fontSize: '12px !important',
-        fontFamily: 'Montserrat',
+        fontFamily: 'Nunito',
         color: 'grey',
     },
-    paginationBarEYInterstateBold: {
+    paginationBarNunitoBold: {
         fontSize: '14px !important',
-        fontFamily: 'Montserrat',
+        fontFamily: 'Nunito',
         color: 'grey',
     },
     perpagebutton: {
         borderRadius: '0',
         borderBottom: `3px solid ${'grey'}`,
         fontSize: '14px !important',
-        fontFamily: 'Montserrat',
+        fontFamily: 'Nunito',
         color: 'grey',
     },
     selectperpage: {
@@ -64,7 +64,7 @@ const CustomPagination = ({ page, itemsPerPage, variables, handlePaginationChang
 
     return (
         <Grid container direction='row' justifyContent='center' alignItems='center' spacing={4}>
-            <Grid item className={classes.paginationBarEYInterstate}>
+            <Grid item className={classes.paginationBarNunito}>
                 <div>{`Showing: ${(page - 1) * itemsPerPage + 1} - ${Math.min(page * itemsPerPage, variables.length)} of  ${variables.length}`}</div>
             </Grid>
             <Grid item>
@@ -102,7 +102,7 @@ const CustomPagination = ({ page, itemsPerPage, variables, handlePaginationChang
                             </Fade>
                         }
                     </Popper>
-                </Button><span className={classes.paginationBarEYInterstate}>per page</span>
+                </Button><span className={classes.paginationBarNunito}>per page</span>
             </Grid>
         </Grid>
     )

@@ -1,3 +1,6 @@
+.add--control__wrapper{
+margin-left: -41%;
+}
 .add--control__wrapper .add--control__general__info {
     height: 405px;
     width: 280px;
@@ -7,7 +10,7 @@
     padding: 15px 20px 20px 20px;
 }
 .add--control__wrapper .add--control__general__info .motif-label {
-    font-family: 'Montserrat';
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
@@ -16,7 +19,7 @@
     color: #747480;
 }
 .add--control__wrapper .add--control__general__info .motif-select-trigger {
-    font-family: 'Montserrat';
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -35,7 +38,7 @@
     border: 1px solid #2e2e38;
     box-shadow: none;
     border-radius: 0;
-    font-family: 'Montserrat';
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -55,7 +58,7 @@
     border: 1px solid black;
     box-shadow: none;
     border-radius: 0;
-    font-family: 'Montserrat';
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -77,7 +80,7 @@
     border-bottom: 1px solid #e7e7ea;
 }
 .veriable--table .table--header {
-    font-family: 'Montserrat';
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -87,7 +90,7 @@
     border-bottom: none;
 }
 .veriable--table .table--body_text {
-    font-family: 'Montserrat';
+    font-family: 'Nunito';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -99,19 +102,23 @@
 }
 .veriable--table .table--heading__name {
     flex-basis: 20%;
+    padding: 10px !important;
 }
 .veriable--table .table--heading__description {
     flex-basis: 20%;
+    padding: 10px !important;
 }
 .veriable--table .table--heading__description .description__block {
     text-align: center;
 }
 .veriable--table .table--heading__csp {
     flex-basis: 20%;
+    padding: 10px !important;
     text-align-last: center;
 }
 .veriable--table .table--heading__certificate {
     flex-basis: 20%;
+    padding: 10px !important;
 }
 .veriable--table .table--header__name {
     margin-left: unset;

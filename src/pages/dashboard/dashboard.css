@@ -1,5 +1,10 @@
 .back {
     background: aliceblue;
     padding-top: 1px;
+    height: 66vh;
+    width: 50%
+}
+
+.m20 {
     margin: 20px;
 }

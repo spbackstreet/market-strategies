@@ -22,9 +22,9 @@ const styles = makeStyles({
         background: 'aliceblue !important',
     },
     etmName: {
-        color: 'grey',
-        fontFamily: 'Montserrat',
-        fontSize: '12px',
+        color: 'darkcyan',
+        fontFamily: 'Nunito',
+        fontSize: '22px',
         fontWeight: 700,
         lineHeight: '32px',
     },
@@ -35,7 +35,7 @@ const index = () => {
     return (
         <Grid container className={classes.marginAlign}>
             <Box className={classes.etmHeader}>
-                <Box component="span" className={classes.etmName}>Control List</Box>
+                <Box component="span" className={classes.etmName}>Bull Call Spread</Box>
             </Box>
             <Grid className={classes.w100}>
                 <ControlList />
