@@ -23,7 +23,7 @@ const styles = makeStyles({
     },
     etmName: {
         color: '#2E2E38',
-        fontFamily: 'Nunito',
+        fontFamily: 'Montserrat',
         fontSize: '22px',
         fontWeight: 700,
         lineHeight: '32px',

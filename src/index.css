@@ -1,19 +1,13 @@
 @font-face {
-  font-family: 'Nunito';
+  font-family: 'Montserrat';
   src:
-    url('./fonts/Nunito-VariableFont_wght.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'NunitoItalic';
-  src:
-    url('./fonts/Nunito-Italic-VariableFont_wght.ttf') format('truetype');
+    url('./fonts/Montserrat-VariableFont_wght.ttf') format('truetype');
 }
 
 
 body {
   margin: 0;
-  font-family: 'Nunito';
+  font-family: 'Montserrat';
   /* background-image: url('./img/background.jpg'); */
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -21,5 +15,5 @@ body {
 }
 
 code {
-  font-family: 'Nunito';
+  font-family: 'Montserrat';
 }

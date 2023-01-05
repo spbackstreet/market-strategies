@@ -10,7 +10,7 @@ margin-left: -41%;
     padding: 15px 20px 20px 20px;
 }
 .add--control__wrapper .add--control__general__info .motif-label {
-    font-family: 'Nunito';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 10px;
@@ -19,7 +19,7 @@ margin-left: -41%;
     color: #747480;
 }
 .add--control__wrapper .add--control__general__info .motif-select-trigger {
-    font-family: 'Nunito';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 12px;
@@ -38,7 +38,7 @@ margin-left: -41%;
     border: 1px solid #2e2e38;
     box-shadow: none;
     border-radius: 0;
-    font-family: 'Nunito';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -58,7 +58,7 @@ margin-left: -41%;
     border: 1px solid black;
     box-shadow: none;
     border-radius: 0;
-    font-family: 'Nunito';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
@@ -78,7 +78,7 @@ margin-left: -41%;
 }
 
 .veriable--table .table--header {
-    font-family: 'Nunito';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -88,7 +88,7 @@ margin-left: -41%;
     border-bottom: none;
 }
 .veriable--table .table--body_text {
-    font-family: 'Nunito';
+    font-family: 'Montserrat';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;

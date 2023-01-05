@@ -38,7 +38,7 @@ const useStyles = makeStyles({
     '& .MuiTypography-root': {
       fontSize: '14px',
       color: 'grey',
-      fontFamily: 'Nunito',
+      fontFamily: 'Montserrat',
     },
     '& .MuiListItem-button': {
       paddingTop: '5px',
@@ -107,7 +107,7 @@ const useStyles = makeStyles({
   tooltip: {
     height: 'auto',
     fontSize: '12px ',
-    fontFamily: 'Nunito',
+    fontFamily: 'Montserrat',
     color: 'white',
     backgroundColor: '#2E2E38',
     zIndex: 1

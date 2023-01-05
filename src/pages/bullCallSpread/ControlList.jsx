@@ -51,7 +51,7 @@ const useStyles = makeStyles({
   searchBox: { display: 'flex', justifyContent: 'end', margin: '-65px 0px 25px 0px' },
 
   noResult: {
-    fontFamily: 'Nunito',
+    fontFamily: 'Montserrat',
     fontStyle: 'normal',
     fontWeight: 500,
     fontSize: '12px !important',
@@ -64,7 +64,7 @@ const useStyles = makeStyles({
   sortValue: {
     minWidth: 87,
     justifyContent: 'space-around',
-    fontFamily: 'Nunito',
+    fontFamily: 'Montserrat',
     lineHeight: '11px',
     color: '#747480',
     marginLeft: 5,

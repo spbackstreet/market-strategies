@@ -21,7 +21,7 @@ const useStyles = makeStyles({
             background: 'transparent',
             marginRight: '10px',
             fontSize: '14px',
-            fontFamily: 'Nunito',
+            fontFamily: 'Montserrat',
         },
         '& .MuiPaginationItem-textPrimary.Mui-selected:hover': {
             color: 'grey',
@@ -30,19 +30,19 @@ const useStyles = makeStyles({
     },
     paginationBarNunito: {
         fontSize: '12px !important',
-        fontFamily: 'Nunito',
+        fontFamily: 'Montserrat',
         color: 'grey',
     },
     paginationBarNunitoBold: {
         fontSize: '14px !important',
-        fontFamily: 'Nunito',
+        fontFamily: 'Montserrat',
         color: 'grey',
     },
     perpagebutton: {
         borderRadius: '0',
         borderBottom: `3px solid ${'grey'}`,
         fontSize: '14px !important',
-        fontFamily: 'Nunito',
+        fontFamily: 'Montserrat',
         color: 'grey',
     },
     selectperpage: {
